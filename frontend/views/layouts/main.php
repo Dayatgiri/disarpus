@@ -32,46 +32,62 @@ AppAssetHeader::register($this);
 </head>
 <body>
 <div class="wrapper">
+    <div class="c0l-lg-6">
     <?php
     NavBar::begin([
  
-            'brandLabel'=>Html::img('@web/uploaded_files/aplikasi/sipuja.gif', ['alt'=>Yii::$app->name]),
-            
-            'brandOptions' => [
-            'class' => 'collapse navbar-collapse '],
+        'brandLabel'=>Html::img('@web/uploaded_files/aplikasi/sipuja.gif', ['alt'=>Yii::$app->name]),
+        'brandOptions' => [
+        'class' => 'collapse navbar-collapse '],
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-expand-lg navbar-fixed-top ',
-            'style'=>'background-color: lightblue;',
+        'class' => 'navbar navbar-expand navbar-fixed-top  ',
+        'style'=>'border-bottom: 3px solid #7952B3;',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/site']],
+        ['options'=> ['class'=>['icon'=>'fa fa-home']],
+        'label' => ' Home', 
+        'url' => ['/site']
+    ],
+
         ['label' => 'Koleksi Digital', 'url' => ['/site/digitalcollection']],
         ['label' => 'Koleksi Buku', 'url' => [yii\helpers\Url::to('@opac')]],
+     
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Daftar', 'url' => ['/pendaftaran/index']];
-        $menuItems[] = ['label' => 'Login', 'url' => [yii\helpers\Url::to('@keanggotaan')]];
+        ['options' => ['class' => 'd-flex text-align:right']];
+        $menuItems2[] = ['label' => 'Daftar', 'url' => ['/pendaftaran/index'],];
+        $menuItems2[] = ['label' => 'Login', 'url' => [yii\helpers\Url::to('@keanggotaan')]];
     } else {
-        $menuItems[] = [
+        $menuItems2[] = [
             'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
             'url' => ['/site/logout'],
             'linkOptions' => ['data-method' => 'post']
         ];
     }
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav'],
         'items' => $menuItems,
 
     ]);
+
+    ?>
+</div>
+<div class="c0l-lg-6">
+    <?php
+    
+    echo Nav::widget([
+        'options' => ['class' => 'navbar-nav navbar-right !important'],
+        'items' => $menuItems2,
+    ]);
     NavBar::end();
     ?>
-    </div>
-   <br>
+</div>
+
 <?php $this->beginBody() ?>
 
-  <div class="container mt-3" style="max-width :100%;;">
+  <div class="wrapper" style="max-width :100%;margin-top:-19px;">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
