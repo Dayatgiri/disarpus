@@ -7150,3 +7150,320 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1636390215.766
     'REQUEST_TIME' => 1636390215
 ]
+2021-11-09 23:30:32 [127.0.0.1][-][gcvugen9lhpt8lgeh2kmhr6nj7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/'../uploaded_files/aplikasi/favicon.png".' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/'../upload...', Array)
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\inlislite3\keanggotaan\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Halaman tidak ditemukan.' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\inlislite3\keanggotaan\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-11-09 23:30:32 [127.0.0.1][-][gcvugen9lhpt8lgeh2kmhr6nj7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'cevnm68e0gt5bk4in7lkct7k43'
+    '_csrf' => '0fd1c53e20b77d796a40cbc9f9f84ec94b1b20230f4f46035bf5f207d6f17d3da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GSUOt6FUUfT3P0KMBs9kI2VD2jH5KxAE\";}'
+    'keanggotaanSession' => 'gcvugen9lhpt8lgeh2kmhr6nj7'
+    '_keanggotaanInlislite' => '212ac6244671786e14c0388318bfd3d24e5e3951322740ea9a4190b310117747a:2:{i:0;s:21:\"_keanggotaanInlislite\";i:1;s:32:\"zR-RKz1qO92_-p3SuGxA70eepImkacBc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/inlislite3/keanggotaan/site/login'
+    'HTTP_COOKIE' => 'PHPSESSID=cevnm68e0gt5bk4in7lkct7k43; _csrf=0fd1c53e20b77d796a40cbc9f9f84ec94b1b20230f4f46035bf5f207d6f17d3da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GSUOt6FUUfT3P0KMBs9kI2VD2jH5KxAE%22%3B%7D; keanggotaanSession=gcvugen9lhpt8lgeh2kmhr6nj7; _keanggotaanInlislite=212ac6244671786e14c0388318bfd3d24e5e3951322740ea9a4190b310117747a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22_keanggotaanInlislite%22%3Bi%3A1%3Bs%3A32%3A%22zR-RKz1qO92_-p3SuGxA70eepImkacBc%22%3B%7D'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\Program Files\\Java\\jdk1.8.0_301\\bin;C:\\Program Files\\Java\\jre1.8.0_301\\bin;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\kixdr\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\kixdr\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.2\\bin;;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\kixdr\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/keanggotaan/index.php'
+    'REMOTE_PORT' => '61403'
+    'REDIRECT_URL' => 'http://localhost:8080/inlislite3/keanggotaan/site/\'../uploaded_files/aplikasi/favicon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/keanggotaan/site/\'../uploaded_files/aplikasi/favicon.png'
+    'SCRIPT_NAME' => '/inlislite3/keanggotaan/index.php'
+    'PHP_SELF' => '/inlislite3/keanggotaan/index.php'
+    'REQUEST_TIME_FLOAT' => 1636475432.249
+    'REQUEST_TIME' => 1636475432
+]
+2021-11-09 23:41:25 [127.0.0.1][-][uvg7ktruh7p4fmp1it0j5ic3o7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "uploaded_files/aplikasi/favicon.png".' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('uploaded_files/...', Array)
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\inlislite3\keanggotaan\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Halaman tidak ditemukan.' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\inlislite3\keanggotaan\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-11-09 23:41:25 [127.0.0.1][-][uvg7ktruh7p4fmp1it0j5ic3o7][info][application] $_COOKIE = [
+    'PHPSESSID' => 'cevnm68e0gt5bk4in7lkct7k43'
+    '_csrf' => '0fd1c53e20b77d796a40cbc9f9f84ec94b1b20230f4f46035bf5f207d6f17d3da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GSUOt6FUUfT3P0KMBs9kI2VD2jH5KxAE\";}'
+    'keanggotaanSession' => 'uvg7ktruh7p4fmp1it0j5ic3o7'
+    '_keanggotaanInlislite' => '212ac6244671786e14c0388318bfd3d24e5e3951322740ea9a4190b310117747a:2:{i:0;s:21:\"_keanggotaanInlislite\";i:1;s:32:\"zR-RKz1qO92_-p3SuGxA70eepImkacBc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/inlislite3/keanggotaan/site/index'
+    'HTTP_COOKIE' => 'PHPSESSID=cevnm68e0gt5bk4in7lkct7k43; _csrf=0fd1c53e20b77d796a40cbc9f9f84ec94b1b20230f4f46035bf5f207d6f17d3da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GSUOt6FUUfT3P0KMBs9kI2VD2jH5KxAE%22%3B%7D; keanggotaanSession=uvg7ktruh7p4fmp1it0j5ic3o7; _keanggotaanInlislite=212ac6244671786e14c0388318bfd3d24e5e3951322740ea9a4190b310117747a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22_keanggotaanInlislite%22%3Bi%3A1%3Bs%3A32%3A%22zR-RKz1qO92_-p3SuGxA70eepImkacBc%22%3B%7D'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\Program Files\\Java\\jdk1.8.0_301\\bin;C:\\Program Files\\Java\\jre1.8.0_301\\bin;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\kixdr\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\kixdr\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.2\\bin;;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\kixdr\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/keanggotaan/index.php'
+    'REMOTE_PORT' => '56331'
+    'REDIRECT_URL' => 'http://localhost:8080/inlislite3/keanggotaan/uploaded_files/aplikasi/favicon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/keanggotaan/uploaded_files/aplikasi/favicon.png'
+    'SCRIPT_NAME' => '/inlislite3/keanggotaan/index.php'
+    'PHP_SELF' => '/inlislite3/keanggotaan/index.php'
+    'REQUEST_TIME_FLOAT' => 1636476085.186
+    'REQUEST_TIME' => 1636476085
+]
+2021-11-09 23:44:21 [127.0.0.1][-][k7c58c1isv2h95i23m78ua3dl5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "frondend/index".' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('frondend/index', Array)
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\inlislite3\keanggotaan\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Halaman tidak ditemukan.' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\inlislite3\keanggotaan\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-11-09 23:44:21 [127.0.0.1][-][k7c58c1isv2h95i23m78ua3dl5][info][application] $_COOKIE = [
+    'PHPSESSID' => 'cevnm68e0gt5bk4in7lkct7k43'
+    '_csrf' => '0fd1c53e20b77d796a40cbc9f9f84ec94b1b20230f4f46035bf5f207d6f17d3da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GSUOt6FUUfT3P0KMBs9kI2VD2jH5KxAE\";}'
+    'keanggotaanSession' => 'k7c58c1isv2h95i23m78ua3dl5'
+    '_keanggotaanInlislite' => '212ac6244671786e14c0388318bfd3d24e5e3951322740ea9a4190b310117747a:2:{i:0;s:21:\"_keanggotaanInlislite\";i:1;s:32:\"zR-RKz1qO92_-p3SuGxA70eepImkacBc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8080/inlislite3/keanggotaan/site/login'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => 'PHPSESSID=cevnm68e0gt5bk4in7lkct7k43; _csrf=0fd1c53e20b77d796a40cbc9f9f84ec94b1b20230f4f46035bf5f207d6f17d3da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GSUOt6FUUfT3P0KMBs9kI2VD2jH5KxAE%22%3B%7D; keanggotaanSession=k7c58c1isv2h95i23m78ua3dl5; _keanggotaanInlislite=212ac6244671786e14c0388318bfd3d24e5e3951322740ea9a4190b310117747a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22_keanggotaanInlislite%22%3Bi%3A1%3Bs%3A32%3A%22zR-RKz1qO92_-p3SuGxA70eepImkacBc%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\Program Files\\Java\\jdk1.8.0_301\\bin;C:\\Program Files\\Java\\jre1.8.0_301\\bin;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\kixdr\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\kixdr\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.2\\bin;;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\kixdr\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/keanggotaan/index.php'
+    'REMOTE_PORT' => '56399'
+    'REDIRECT_URL' => 'http://localhost:8080/inlislite3/keanggotaan/frondend/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/keanggotaan/frondend/index'
+    'SCRIPT_NAME' => '/inlislite3/keanggotaan/index.php'
+    'PHP_SELF' => '/inlislite3/keanggotaan/index.php'
+    'REQUEST_TIME_FLOAT' => 1636476260.973
+    'REQUEST_TIME' => 1636476260
+]
+2021-11-09 23:44:21 [127.0.0.1][-][k7c58c1isv2h95i23m78ua3dl5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "frondend/favicon.png".' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('frondend/favico...', Array)
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\inlislite3\keanggotaan\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Halaman tidak ditemukan.' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\inlislite3\keanggotaan\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-11-09 23:44:21 [127.0.0.1][-][k7c58c1isv2h95i23m78ua3dl5][info][application] $_COOKIE = [
+    'PHPSESSID' => 'cevnm68e0gt5bk4in7lkct7k43'
+    '_csrf' => '0fd1c53e20b77d796a40cbc9f9f84ec94b1b20230f4f46035bf5f207d6f17d3da:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GSUOt6FUUfT3P0KMBs9kI2VD2jH5KxAE\";}'
+    'keanggotaanSession' => 'k7c58c1isv2h95i23m78ua3dl5'
+    '_keanggotaanInlislite' => '212ac6244671786e14c0388318bfd3d24e5e3951322740ea9a4190b310117747a:2:{i:0;s:21:\"_keanggotaanInlislite\";i:1;s:32:\"zR-RKz1qO92_-p3SuGxA70eepImkacBc\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 3
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/inlislite3/keanggotaan/frondend/index'
+    'HTTP_COOKIE' => 'PHPSESSID=cevnm68e0gt5bk4in7lkct7k43; _csrf=0fd1c53e20b77d796a40cbc9f9f84ec94b1b20230f4f46035bf5f207d6f17d3da%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GSUOt6FUUfT3P0KMBs9kI2VD2jH5KxAE%22%3B%7D; keanggotaanSession=k7c58c1isv2h95i23m78ua3dl5; _keanggotaanInlislite=212ac6244671786e14c0388318bfd3d24e5e3951322740ea9a4190b310117747a%3A2%3A%7Bi%3A0%3Bs%3A21%3A%22_keanggotaanInlislite%22%3Bi%3A1%3Bs%3A32%3A%22zR-RKz1qO92_-p3SuGxA70eepImkacBc%22%3B%7D'
+    'HTTP_SEC_FETCH_DEST' => 'image'
+    'HTTP_SEC_FETCH_MODE' => 'no-cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\Program Files\\Java\\jdk1.8.0_301\\bin;C:\\Program Files\\Java\\jre1.8.0_301\\bin;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\kixdr\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\kixdr\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.2\\bin;;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\kixdr\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/keanggotaan/index.php'
+    'REMOTE_PORT' => '56416'
+    'REDIRECT_URL' => 'http://localhost:8080/inlislite3/keanggotaan/frondend/favicon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/keanggotaan/frondend/favicon.png'
+    'SCRIPT_NAME' => '/inlislite3/keanggotaan/index.php'
+    'PHP_SELF' => '/inlislite3/keanggotaan/index.php'
+    'REQUEST_TIME_FLOAT' => 1636476261.273
+    'REQUEST_TIME' => 1636476261
+]

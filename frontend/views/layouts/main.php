@@ -46,19 +46,33 @@ AppAssetHeader::register($this);
         ],
     ]);
     $menuItems = [
-        ['options'=> ['class'=>['icon'=>'fa fa-home']],
+        ['options'=> ['class'=>['icon'=>'fa fa-home fa-lg']],
         'label' => ' Home', 
         'url' => ['/site']
     ],
-
-        ['label' => 'Koleksi Digital', 'url' => ['/site/digitalcollection']],
-        ['label' => 'Koleksi Buku', 'url' => [yii\helpers\Url::to('@opac')]],
-     
+   
+        ['options'=> ['class'=>['icon'=>'fa fa-book fa-lg ']],
+        'label' => 'Koleksi Digital', 
+        'url' => ['/site/digitalcollection']
+],
+        ['options'=> ['class'=>['icon'=>'fa fa-archive fa-lg']],           
+        'label' => 'Koleksi Buku', 
+        'url' => [yii\helpers\Url::to('@opac')],
+        'content'=>'|'
+],
     ];
     if (Yii::$app->user->isGuest) {
-        ['options' => ['class' => 'd-flex text-align:right']];
-        $menuItems2[] = ['label' => 'Daftar', 'url' => ['/pendaftaran/index'],];
-        $menuItems2[] = ['label' => 'Login', 'url' => [yii\helpers\Url::to('@keanggotaan')]];
+       
+        $menuItems2[] = 
+        ['options'=> ['class'=>['icon'=>'fa fa-pencil-square-o fa-lg']],
+        'label' => 'Daftar', 
+        'url' => ['/pendaftaran/index']
+    ];
+        $menuItems2[] = 
+        ['options'=> ['class'=>['icon'=>'fa fa-arrow-circle-o-right fa-lg']],
+        'label' => 'Login', 
+        'url' => ['site/login']
+    ];
     } else {
         $menuItems2[] = [
             'label' => 'Logout (' . Yii::$app->user->identity->username . ')',

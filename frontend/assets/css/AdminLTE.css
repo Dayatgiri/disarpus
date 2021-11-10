@@ -2347,12 +2347,12 @@ a:focus {
  * Component: Nav
  * --------------
  */
-.nav > li > a:hover,
+/* .nav > li > a:hover,
 .nav > li > a:active,
 .nav > li > a:focus {
   color: #444;
   background: #99bbdb;
-}
+} */
 /* NAV PILLS */
 .nav-pills > li > a {
   border-radius: 0;
