@@ -326,7 +326,7 @@ else {
 
     <footer class="footer main-footer">
       <div class="container">
-        <div class="pull-right hidden-sm" style="font-family: "Corbel", Arial, Helvetica, sans-serif;">
+        <div class="pull-right hidden-sm" style="font-family: Corbel, Arial, Helvetica, sans-serif;">
           <?=\Yii::$app->params['footerInfoRight'];?>
         </div>
         <?= yii::t('app',\Yii::$app->params['footerInfoLeft']); ?> &copy; <?= yii::t('app',\Yii::$app->params['year']); ?> <a href="http://inlislite.perpusnas.go.id" target="_blank"><?= yii::t('app','Perpustakaan Nasional Republik Indonesia') ?></a>

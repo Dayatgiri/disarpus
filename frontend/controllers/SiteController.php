@@ -1,12 +1,17 @@
 <?php
 namespace frontend\controllers;
 
-use Yii;
 use common\models\LoginForm;
+use common\models\Membersonline;
+use common\models\Members;
+use common\models\UserMemberOnlines;
+use Yii;
+use common\models\LoginKeanggotaanForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use mdm\admin\models\form\Login;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
@@ -121,7 +126,7 @@ class SiteController extends Controller
             return $this->goHome();
         }
 
-        $model = new LoginForm();
+        $model = new LoginKeanggotaanForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         } else {

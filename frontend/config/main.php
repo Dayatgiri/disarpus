@@ -19,9 +19,17 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => 'common\models\UserMemberOnlines',
             'enableAutoLogin' => true,
+            'identityCookie' => [
+                'name' => '_keanggotaanUser', // unique for backend
+                'path' => '/keanggotaan' // set it to correct path for backend app.
+            ]
+        
         ],
+        'session' => [
+            'class' => 'yii\web\DbSession',
+            'name' => 'keanggotaanSession',],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -34,7 +42,9 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ]
+        
     ],
+    
     'params' => $params,
     
 ];

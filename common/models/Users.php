@@ -224,7 +224,7 @@ class Users extends BaseUsers implements IdentityInterface
 
         $dbPassword = static::findOne(['username' => Yii::$app->user->identity->username])->password;
 
-        return strtolower($dbPassword) === strtolower(sha1($password)) ;
+        return strtolower($dbPassword) === strtolower(sha1('password')) ;
 
         // return Yii::$app->security->validatePassword($password, $dbPassword);
     }

@@ -934,3 +934,233 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1636004363.527
     'REQUEST_TIME' => 1636004363
 ]
+2021-11-10 13:57:39 [127.0.0.1][-][f1pt6cipoursvdf6r83ukql815][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Tidak dapat mem-verifikasi pengiriman data Anda.' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#5 {main}
+2021-11-10 13:57:39 [127.0.0.1][-][f1pt6cipoursvdf6r83ukql815][info][application] $_COOKIE = [
+    'PHPSESSID' => '2evsecej428ug6r7aniaa8d2e7'
+    '_csrf' => 'd0fc324449fadb4986b8461c129b358b25430ec3cd00436ef439dac93fa5c066a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8WkbwVn_rloA7Sf36lsXTwctNDshPDRp\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'UTVFdk5ZelEXZy8OHSopYwsNcjceExAHB2cOQyQuMhs/ZT0ADTZXYw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/inlislite3/opac/site'
+    'HTTP_COOKIE' => 'PHPSESSID=2evsecej428ug6r7aniaa8d2e7; _csrf=d0fc324449fadb4986b8461c129b358b25430ec3cd00436ef439dac93fa5c066a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228WkbwVn_rloA7Sf36lsXTwctNDshPDRp%22%3B%7D'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\Program Files\\Java\\jdk1.8.0_301\\bin;C:\\Program Files\\Java\\jre1.8.0_301\\bin;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\kixdr\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\kixdr\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.2\\bin;;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\kixdr\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '50210'
+    'REDIRECT_URL' => 'http://localhost:8080/inlislite3/opac/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/opac/site/login'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1636527459.723
+    'REQUEST_TIME' => 1636527459
+]
+2021-11-10 13:57:41 [127.0.0.1][-][f1pt6cipoursvdf6r83ukql815][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Tidak dapat mem-verifikasi pengiriman data Anda.' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#5 {main}
+2021-11-10 13:57:41 [127.0.0.1][-][f1pt6cipoursvdf6r83ukql815][info][application] $_COOKIE = [
+    'PHPSESSID' => '2evsecej428ug6r7aniaa8d2e7'
+    '_csrf' => 'd0fc324449fadb4986b8461c129b358b25430ec3cd00436ef439dac93fa5c066a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8WkbwVn_rloA7Sf36lsXTwctNDshPDRp\";}'
+    'keanggotaanSession' => 'f1pt6cipoursvdf6r83ukql815'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'UTVFdk5ZelEXZy8OHSopYwsNcjceExAHB2cOQyQuMhs/ZT0ADTZXYw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/inlislite3/opac/site'
+    'HTTP_COOKIE' => 'PHPSESSID=2evsecej428ug6r7aniaa8d2e7; _csrf=d0fc324449fadb4986b8461c129b358b25430ec3cd00436ef439dac93fa5c066a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228WkbwVn_rloA7Sf36lsXTwctNDshPDRp%22%3B%7D; keanggotaanSession=f1pt6cipoursvdf6r83ukql815'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\Program Files\\Java\\jdk1.8.0_301\\bin;C:\\Program Files\\Java\\jre1.8.0_301\\bin;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\kixdr\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\kixdr\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.2\\bin;;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\kixdr\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '50213'
+    'REDIRECT_URL' => 'http://localhost:8080/inlislite3/opac/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/opac/site/login'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1636527461.234
+    'REQUEST_TIME' => 1636527461
+]
+2021-11-10 13:57:42 [127.0.0.1][-][f1pt6cipoursvdf6r83ukql815][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Tidak dapat mem-verifikasi pengiriman data Anda.' in C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('login', Array)
+#2 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/login', Array)
+#3 C:\xampp\htdocs\inlislite3\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\xampp\htdocs\inlislite3\opac\index.php(26): yii\base\Application->run()
+#5 {main}
+2021-11-10 13:57:42 [127.0.0.1][-][f1pt6cipoursvdf6r83ukql815][info][application] $_COOKIE = [
+    'PHPSESSID' => '2evsecej428ug6r7aniaa8d2e7'
+    '_csrf' => 'd0fc324449fadb4986b8461c129b358b25430ec3cd00436ef439dac93fa5c066a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"8WkbwVn_rloA7Sf36lsXTwctNDshPDRp\";}'
+    'keanggotaanSession' => 'f1pt6cipoursvdf6r83ukql815'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_X_CSRF_TOKEN' => 'UTVFdk5ZelEXZy8OHSopYwsNcjceExAHB2cOQyQuMhs/ZT0ADTZXYw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:8080/inlislite3/opac/site'
+    'HTTP_COOKIE' => 'PHPSESSID=2evsecej428ug6r7aniaa8d2e7; _csrf=d0fc324449fadb4986b8461c129b358b25430ec3cd00436ef439dac93fa5c066a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228WkbwVn_rloA7Sf36lsXTwctNDshPDRp%22%3B%7D; keanggotaanSession=f1pt6cipoursvdf6r83ukql815'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'CONTENT_LENGTH' => '0'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\xampp\\php;C:\\Program Files\\Java\\jdk1.8.0_301\\bin;C:\\Program Files\\Java\\jre1.8.0_301\\bin;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\kixdr\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\kixdr\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.2\\bin;;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\mysql\\bin;C:\\Users\\kixdr\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inlislite3/opac/index.php'
+    'REMOTE_PORT' => '50216'
+    'REDIRECT_URL' => 'http://localhost:8080/inlislite3/opac/site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/inlislite3/opac/site/login'
+    'SCRIPT_NAME' => '/inlislite3/opac/index.php'
+    'PHP_SELF' => '/inlislite3/opac/index.php'
+    'REQUEST_TIME_FLOAT' => 1636527462.091
+    'REQUEST_TIME' => 1636527462
+]

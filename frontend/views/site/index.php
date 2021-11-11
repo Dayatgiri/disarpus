@@ -3,6 +3,10 @@
 use yii\helpers\Url;
 use yii\bootstrap\Carousel;
 use inliscore\adminlte\widgets\InfoBox;
+Yii::setAlias('opac',  '../opac/site');
+$session = Yii::$app->session;
+$homeUrl=Yii::$app->homeUrl;
+$rootPath=\Yii::$app->basePath;
 
 ?>
 <main>
@@ -209,16 +213,33 @@ echo \inliscore\adminlte\widgets\SmallBox::widget([
 
 		<div class="row featurette">
 			<div class="col-md-7">
-				<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-				<p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-			</div>
-			<div class="col-md-5">
-				<svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+			<?php
 
-			</div>
-		</div>
+require 'hitcounter.php';
 
-		<hr class="featurette-divider">
+$hit = new HitCounter();
+
+echo '<h1>Jumlah Pengunnjung Website</h1>';
+//cek dan simpan
+$hit->Hitung();
+
+//tampilkan counter
+echo 'jumlah pengunjung :' . $hit->tampil();
+
+//tampilkan history jika ada
+$h = $hit->waktu();
+if (!empty($h)) {
+    echo '<br>Anda telah mengunjungi halaman ini pada : ' . $h;
+}	
+ ?>
+
+<style>
+.kotak{ border: 1px solid #000000; }
+.pink{ background-color: #F6DAD7; }
+.hijau{ background-color: green; }
+</style>
+<script src="https://www.asanoer.com/hit-counter/asanoer.com_kunjungannya.js"></script>
+<div class="kotak hijau">HALAMAN INI </div> <div class="kotak pink" id="urlnya" style="color:red;"> <z style="color:blue;">Load URL ...</z> </div> <div class="kotak pink"> Sudah Dikunjungi Sebanyak--<U id="counted" style="color:blue;"><z style="color:red;">Load Counter...</z></U>--KALI </div>
 
 		<!-- /END THE FEATURETTES -->
 

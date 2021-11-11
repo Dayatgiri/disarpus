@@ -34,11 +34,11 @@ class UserSetting extends BaseUserSetting implements IdentityInterface
             [['password', 'password_hash', 'password_reset_token', 'Fullname', 'EmailAddress', 'SesID', 'ActivationCode'], 'string', 'max' => 255],
             [['auth_key'], 'string', 'max' => 32],
             [['CreateTerminal', 'UpdateTerminal'], 'string', 'max' => 100],
-            [['Branch_id'], 'exist', 'skipOnError' => true, 'targetClass' => Branchs::className(), 'targetAttribute' => ['Branch_id' => 'ID']],
-            [['Department_id'], 'exist', 'skipOnError' => true, 'targetClass' => Departments::className(), 'targetAttribute' => ['Department_id' => 'ID']],
-            [['Role_id'], 'exist', 'skipOnError' => true, 'targetClass' => Roles::className(), 'targetAttribute' => ['Role_id' => 'ID']],
-            [['UpdateBy'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['UpdateBy' => 'ID']],
-            [['CreateBy'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['CreateBy' => 'ID']]
+            [['Branch_id'], 'exist', 'skipOnError' => true, 'targetClass' => Branchs::class, 'targetAttribute' => ['Branch_id' => 'ID']],
+            [['Department_id'], 'exist', 'skipOnError' => true, 'targetClass' => Departments::class, 'targetAttribute' => ['Department_id' => 'ID']],
+            [['Role_id'], 'exist', 'skipOnError' => true, 'targetClass' => Roles::class, 'targetAttribute' => ['Role_id' => 'ID']],
+            [['UpdateBy'], 'exist', 'skipOnError' => true, 'targetClass' => Users::class, 'targetAttribute' => ['UpdateBy' => 'ID']],
+            [['CreateBy'], 'exist', 'skipOnError' => true, 'targetClass' => Users::class, 'targetAttribute' => ['CreateBy' => 'ID']]
         ];
     }
 

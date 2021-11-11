@@ -7,11 +7,10 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use frontend\assets\AppAsset;
 use common\widgets\Alert;
 use frontend\assets\AppAssetHeader;
 
-Yii::setAlias('keanggotaan',  'keanggotaan/site/login');
+//Yii::setAlias('keanggotaan',  '../keanggotaan/site');
 Yii::setAlias('opac',  'opac/site');
 Yii::setAlias('digitalcollection',  'digitalcollection/site');
 
@@ -45,46 +44,85 @@ AppAssetHeader::register($this);
         'style'=>'border-bottom: 3px solid #7952B3;',
         ],
     ]);
+    
     $menuItems = [
-        ['options'=> ['class'=>['icon'=>'fa fa-home fa-lg']],
-        'label' => ' Home', 
-        'url' => ['/site']
+        
+        ['options'=> ['class'=>['icon'=>'fa fa-home fa-lg'],
+        'options'=> ['style' => 'text-align:center'],
     ],
-   
+        'label' => ' Profil', 
+       // 'url' => ['/site'],
+        'items' => [
+            ['label' => 'Visi dan Misi', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],],
+            ['label' => 'Tugas dan Fungsi', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],],
+            ['label' => 'Foto Gedung', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],],
+            ['label' => 'Jajaran Unit Kerja', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],]
+            ],
+        ],
         ['options'=> ['class'=>['icon'=>'fa fa-book fa-lg ']],
-        'label' => 'Koleksi Digital', 
-        'url' => ['/site/digitalcollection']
+        'label' => 'Layanan', 
+        //'url' => ['/site/digitalcollection']
+        'items' => [
+            ['label' => 'Jadwal Layanan', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],],
+            ['label' => 'Virtual tour', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],],
+            ['label' => 'Agenda Kegiatan', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],],
+            ['label' => 'Laporan', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],]
+            ],
 ],
         ['options'=> ['class'=>['icon'=>'fa fa-archive fa-lg']],           
-        'label' => 'Koleksi Buku', 
-        'url' => [yii\helpers\Url::to('@opac')],
-        'content'=>'|'
+        'label' => 'Aktivitas', 
+        //'url' => [yii\helpers\Url::to('@opac')],
+        'items' => [
+            ['label' => 'Artikel', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],],
+            ['label' => 'Berita', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],],
+            ['label' => 'Galeri photo', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],],
+            ['label' => 'Pengumuman', 'url' => ['/site/about'],
+            'options'=> ['style' => ' font-size: 15px;'],]
+            ],
+        
 ],
     ];
     if (Yii::$app->user->isGuest) {
        
-        $menuItems2[] = 
+        $menuItems[] = 
         ['options'=> ['class'=>['icon'=>'fa fa-pencil-square-o fa-lg']],
         'label' => 'Daftar', 
         'url' => ['/pendaftaran/index']
     ];
-        $menuItems2[] = 
+        $menuItems[] = 
         ['options'=> ['class'=>['icon'=>'fa fa-arrow-circle-o-right fa-lg']],
         'label' => 'Login', 
-        'url' => ['site/login']
+        'url' => ['/site/login']
     ];
     } else {
-        $menuItems2[] = [
-            'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
+        $menuItems[] = [
+            'label' => 'Logout (' . Yii::$app->user->identity->NoAnggota . ')',
             'url' => ['/site/logout'],
             'linkOptions' => ['data-method' => 'post']
         ];
-    }
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav'],
-        'items' => $menuItems,
 
-    ]);
+        $menuItems[] = 
+        ['options'=> ['class'=>['icon'=>'fa fa-address-book-o fa-lg']],
+        'label' => 'Profil', 
+        'url' => ['/Keanggotaan/site']
+    ];
+    }
+    // echo Nav::widget([
+    //     'options' => ['class' => 'navbar-nav'],
+    //     'items' => $menuItems,
+
+    // ]);
 
     ?>
 </div>
@@ -93,7 +131,7 @@ AppAssetHeader::register($this);
     
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right !important'],
-        'items' => $menuItems2,
+        'items' => $menuItems,
     ]);
     NavBar::end();
     ?>

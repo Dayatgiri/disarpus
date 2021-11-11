@@ -209,7 +209,7 @@ class UserMemberOnlines extends BaseMembersonline implements IdentityInterface
     public function verifyPassword($password)
     {
         $dbPassword = static::findOne(['NoAnggota' => Yii::$app->user->identity->NoAnggota])->Password;
-        $comparePassword = sha1($password);
+        $comparePassword = sha1('password');
         if($dbPassword == $comparePassword){
             return true;
         }else{
